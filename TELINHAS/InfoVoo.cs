@@ -24,9 +24,8 @@ namespace Cadastro_Check_in
             Pessoa pessoa = new Pessoa();
             try
             {
-                Poltronacs info = new Poltronacs();
-                info.ShowDialog();
-                if (cb_Origem.SelectedItem == null && cb_Destino.SelectedItem == null)
+
+                if (cb_Origem.SelectedItem == null && cb_Destino.SelectedItem == null) // ComboBox seleção
                 {
                     MessageBox.Show("Erro, Você não selecionou a origem nem o destino", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -52,81 +51,67 @@ namespace Cadastro_Check_in
                     label9.Visible = true;
                 }
 
-                if (dateTimePicker2.Value <= dateTimePicker3.Value)
-                {
-                    DateTime dataIda = dateTimePicker2.Value;
-                    string IdaSomenteData = dataIda.ToShortDateString();
-
-                    DateTime dataVolta = dateTimePicker3.Value;
-                    string VoltaSomenteData = dataVolta.ToShortDateString();
-
-                    label10.Text = "Data de ida escolhida: " + IdaSomenteData;
-                    label11.Text = "Data de volta escolhida: " + VoltaSomenteData;
-
-                    label10.Visible = true;
-                    label11.Visible = true;
-
-                    //string dataIda = selectedDate.ToShortDateString();
-                }
-                else
-                {
-                    MessageBox.Show("Erro! Data de volta é anterior a data de ida", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
 
                 int taxa = pessoa.Taxa(Convert.ToInt32(comboBox2.SelectedItem));
 
-                if (checkBox1.Checked)
-                {
-                    label12.Text = "Valor de taxa de bagagem a ser pago: R$ " + taxa + ",00";
-                    label12.Visible = true;
-                }
-                else
-                {
-                    taxa = 0;
-                    label12.Text = "Valor de taxa de bagagem a ser pago: R$ " + taxa + ",00";
-                    label12.Visible = true;
-                }
-
                 if (cb_Origem.SelectedItem != null && cb_Destino.SelectedItem != null && cb_Origem.SelectedItem != cb_Destino.SelectedItem
-                    && dateTimePicker2.Value <= dateTimePicker3.Value)
+                    && dateTimePicker2.Value <= dateTimePicker3.Value) // verificador de campos em branco
                 {
-                 MessageBox.Show($" Compra realizada com sucesso! Valor da passagem: R$ {(Convert.ToString(350 + taxa)),00}");
+                    MessageBox.Show($" Compra realizada com sucesso! Valor da passagem: R$ {(Convert.ToString(350 + taxa)),00}");
+
+                    if (checkBox1.Checked) // valores da bagagem
+                    {
+                        label12.Text = "Valor de taxa de bagagem a ser pago: R$ " + taxa + ",00";
+                        label12.Visible = true;
+                    }
+                    else
+                    {
+                        taxa = 0;
+                        label12.Text = "Valor de taxa de bagagem a ser pago: R$ " + taxa + ",00";
+                        label12.Visible = true;
+                    }
+
+                    if (dateTimePicker2.Value <= dateTimePicker3.Value) // Calendario
+                    {
+                        DateTime dataIda = dateTimePicker2.Value;
+                        string IdaSomenteData = dataIda.ToShortDateString();
+
+                        DateTime dataVolta = dateTimePicker3.Value;
+                        string VoltaSomenteData = dataVolta.ToShortDateString();
+
+                        label10.Text = "Data de ida escolhida: " + IdaSomenteData;
+                        label11.Text = "Data de volta escolhida: " + VoltaSomenteData;
+
+                        label10.Visible = true;
+                        label11.Visible = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro! Data de volta é anterior a data de ida", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Compra não efetuada!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex.Message, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-
-            //string Dados = ($"\n Sua Escolha foi: {cb_Origem.Text} Data de Voo: {dateTimePicker2.Text}\n Seu Destino será: {cb_Destino.Text}  \nData de Volta: {dateTimePicker3.Text}\n O valor que você deverá pagar será:  \n{comboBox2}\n");
-
-            //label8.Text = Dados;
-
-
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
-
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
         }
-
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             dateTimePicker2.MinDate = DateTime.Now;
             dateTimePicker2.MaxDate = DateTime.Now.AddMonths(1);
         }
-
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
             dateTimePicker3.MinDate = DateTime.Now;
@@ -143,25 +128,18 @@ namespace Cadastro_Check_in
                 MessageBox.Show("Erro!" + ex.Message);
             }
         }
-
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
-
         private void InfoVoo_Load(object sender, EventArgs e)
         {
-
         }
-
         private void label6_Click(object sender, EventArgs e)
         {
         }
-
         private void label7_Click(object sender, EventArgs e)
         {
         }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -175,7 +153,6 @@ namespace Cadastro_Check_in
                 label1.Visible = false;
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             cb_Origem.Text = "";
@@ -188,7 +165,12 @@ namespace Cadastro_Check_in
             label11.Visible = false;
             label12.Visible = false;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Poltronacs info = new Poltronacs();
+            info.ShowDialog();
+        }
     }
-}//Pessoa p = new Pessoa();
- //int taxa = p.Taxa(Convert.ToInt32(comboBox2.Text) * 5);
+}
 

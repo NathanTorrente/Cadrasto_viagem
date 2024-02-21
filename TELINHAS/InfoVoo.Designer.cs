@@ -51,6 +51,7 @@
             button2 = new Button();
             panel1 = new Panel();
             label14 = new Label();
+            button3 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -259,10 +260,10 @@
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.InactiveCaptionText;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(549, 181);
+            button2.Location = new Point(549, 179);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(127, 41);
+            button2.Size = new Size(127, 36);
             button2.TabIndex = 50;
             button2.Text = "Cancelar";
             button2.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -293,12 +294,24 @@
             label14.TabIndex = 52;
             label14.Text = "Ticket";
             // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Location = new Point(549, 142);
+            button3.Name = "button3";
+            button3.Size = new Size(127, 31);
+            button3.TabIndex = 53;
+            button3.Text = "Poltrona";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // InfoVoo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(700, 338);
+            Controls.Add(button3);
             Controls.Add(label14);
             Controls.Add(button2);
             Controls.Add(checkBox1);
@@ -351,5 +364,6 @@
         private Button button2;
         private Panel panel1;
         private Label label14;
+        private Button button3;
     }
 }

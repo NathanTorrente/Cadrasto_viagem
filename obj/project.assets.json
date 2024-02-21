@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Familia Torrente ^-^\\.nuget\\packages\\": {}
+    "C:\\Users\\natha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Familia Torrente ^-^\\Documents\\Cadastro_Viagem\\Cadastro Check in.csproj",
+      "projectUniqueName": "E:\\Beleza\\Pen Drive\\Cadastro_Viagem2023\\Cadastro Check in.csproj",
       "projectName": "Cadastro Check in",
-      "projectPath": "C:\\Users\\Familia Torrente ^-^\\Documents\\Cadastro_Viagem\\Cadastro Check in.csproj",
-      "packagesPath": "C:\\Users\\Familia Torrente ^-^\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Familia Torrente ^-^\\Documents\\Cadastro_Viagem\\obj\\",
+      "projectPath": "E:\\Beleza\\Pen Drive\\Cadastro_Viagem2023\\Cadastro Check in.csproj",
+      "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
+      "outputPath": "E:\\Beleza\\Pen Drive\\Cadastro_Viagem2023\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Familia Torrente ^-^\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -87,9 +87,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -115,19 +112,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.9, 7.0.9]"
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.9, 7.0.9]"
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.9, 7.0.9]"
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.9, 7.0.9]"
+            "version": "[7.0.14, 7.0.14]"
           }
         ],
         "frameworkReferences": {
@@ -138,7 +135,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

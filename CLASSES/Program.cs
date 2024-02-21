@@ -1,4 +1,4 @@
-namespace Cadastro_Check_in
+namespace Cadastro_Check_in.CLASSES
 {
     internal static class Program
     {

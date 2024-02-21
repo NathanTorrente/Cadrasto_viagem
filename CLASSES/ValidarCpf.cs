@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cadastro_Check_in
+namespace Cadastro_Check_in.CLASSES
 {
     internal class ValidarCpf
     {

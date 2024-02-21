@@ -88,7 +88,7 @@
             masktx_Cpf.Margin = new Padding(3, 2, 3, 2);
             masktx_Cpf.Mask = "000,000,000-00";
             masktx_Cpf.Name = "masktx_Cpf";
-            masktx_Cpf.Size = new Size(110, 27);
+            masktx_Cpf.Size = new Size(113, 27);
             masktx_Cpf.TabIndex = 9;
             masktx_Cpf.MaskInputRejected += maskedTextBox1_MaskInputRejected;
             // 
@@ -102,7 +102,7 @@
             br_Cancelar.RightToLeft = RightToLeft.No;
             br_Cancelar.Size = new Size(109, 46);
             br_Cancelar.TabIndex = 10;
-            br_Cancelar.Text = "Cancelar";
+            br_Cancelar.Text = "Apagar";
             br_Cancelar.UseVisualStyleBackColor = true;
             br_Cancelar.Click += br_Cancelar_Click;
             // 
@@ -113,7 +113,7 @@
             br_Salvar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             br_Salvar.Image = (Image)resources.GetObject("br_Salvar.Image");
             br_Salvar.ImageAlign = ContentAlignment.MiddleLeft;
-            br_Salvar.Location = new Point(238, 177);
+            br_Salvar.Location = new Point(266, 175);
             br_Salvar.Margin = new Padding(3, 2, 3, 2);
             br_Salvar.Name = "br_Salvar";
             br_Salvar.Size = new Size(109, 53);
@@ -140,7 +140,7 @@
             button1.BackColor = Color.Transparent;
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(366, 175);
+            button1.Location = new Point(381, 175);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(118, 52);
@@ -168,15 +168,16 @@
             maskedTextBox1.Margin = new Padding(3, 2, 3, 2);
             maskedTextBox1.Mask = "(00) 00000-9999";
             maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(110, 27);
+            maskedTextBox1.Size = new Size(124, 27);
             maskedTextBox1.TabIndex = 34;
+            maskedTextBox1.MaskInputRejected += maskedTextBox1_MaskInputRejected_1;
             // 
             // button2
             // 
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(501, 177);
+            button2.Location = new Point(514, 178);
             button2.Name = "button2";
             button2.Size = new Size(117, 46);
             button2.TabIndex = 35;

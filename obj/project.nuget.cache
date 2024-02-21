@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "lRT52PLdEoqg6xVt+SenzQ9iR58Q/trsyiDlWk0kPSQ9KdA4RGvxuLjzdJKxXTKaSXggTcr7vjNOWthJ50w/RQ==",
+  "dgSpecHash": "Pja3tBbw3ayqf3EAcXVUFDjPFV2tE/9iTZZm3xcDOJRpZ2dpEUjReBFHZVPxW7O1FCfh0iS6PmomJP00AX6Iig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Familia Torrente ^-^\\Documents\\Cadastro_Viagem\\Cadastro Check in.csproj",
+  "projectFilePath": "E:\\Beleza\\Pen Drive\\Cadastro_Viagem2023\\Cadastro Check in.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Familia Torrente ^-^\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Familia Torrente ^-^\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.9\\microsoft.windowsdesktop.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\Familia Torrente ^-^\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.9\\microsoft.netcore.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\Familia Torrente ^-^\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.9\\microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\Familia Torrente ^-^\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.9\\microsoft.netcore.app.host.win-x64.7.0.9.nupkg.sha512"
+    "C:\\Users\\natha\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }
